@@ -47,6 +47,7 @@ ol {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -75,19 +76,33 @@ ol {
 }
 
 /* header */
-
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .accent {
   color: var(--accent-color);
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--black-text-color);
+  margin-right: 93px;
 }
-
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
   font-weight: 500;
   line-height: 1.14;
@@ -99,13 +114,19 @@ ol {
 .nav-link:focus {
   color: var(--accent-color);
 }
-
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-link:hover,
@@ -155,6 +176,11 @@ ol {
 }
 
 /* advantages */
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 47px;
+  background-color: var(--primary-background-color);
+}
 .advantages__title {
   font-size: 14px;
   font-weight: 700;
@@ -164,8 +190,16 @@ ol {
 }
 
 /* work */
+.work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+  background-color: var(--primary-background-color);
+}
 
 /* team */
+.team {
+  background-color: var(--secondary-background-color);
+}
 .team__title {
   font-weight: 500;
   font-size: 16px;
@@ -211,6 +245,13 @@ ol {
 }
 
 /* portfolio */
+.filters {
+  display: flex;
+  justify-content: center;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filters-btn {
   font-weight: 500;
   font-size: 16px;
@@ -220,6 +261,8 @@ ol {
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   cursor: pointer;
+  border: 0;
+  padding: 6px 22px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
